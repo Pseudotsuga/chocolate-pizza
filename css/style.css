@@ -5,6 +5,9 @@ main {
 }
 #header {
   grid-row: 1 / 2;
+  border: 20px solid transparent;
+  border-image: url('../img/hr-img.png') repeat;
+  border-image-repeat: round stretch;
 }
 #header > img:nth-of-type(1){
   float: left;
