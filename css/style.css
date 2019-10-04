@@ -1,0 +1,20 @@
+main {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+#header {
+  grid-row: 1 / 2;
+}
+#header > img:nth-of-type(1){
+  float: left;
+}
+#header > h2, p {
+  float: left;
+}
+article {
+  grid-row: 2 / 3;
+}
+#foot {
+  grid-row: 3 /4;
+}
