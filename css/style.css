@@ -1,23 +1,94 @@
+body {
+  font-family: 'Merriweather', serif;
+}
 main {
   height: 100%;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 901px 1fr;
 }
-#header {
+header {
   grid-row: 1 / 2;
-  border: 20px solid transparent;
-  border-image: url('../img/hr-img.png') repeat;
-  border-image-repeat: round stretch;
+  grid-column: 2 /3;
 }
-#header > img:nth-of-type(1){
+/* Begin header subgrid */
+header > img:nth-of-type(1){
   float: left;
 }
-#header > h2, p {
-  float: left;
+header > p {
+  font-size:xx-small;
 }
+header > ul {
+  margin-bottom: 30px;
+}
+.socialmediaimg {
+  float: right;
+}
+.socialgap {
+  margin-left: 20px;
+}
+/* End header subgrid, resume main grid */
 article {
   grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
-#foot {
-  grid-row: 3 /4;
+#articlefoot {
+  text-align: center;
+}
+#authDescp {
+  text-align: left;
+  margin-left: 85px;
+  display: block;
+}
+#authName {
+  text-align: left;
+  margin-left: 85px;
+  display: block;
+  font-weight:bolder;
+}
+footer {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  text-align: center;
+}
+footer p {
+  color: gray;
+  font-size: 10px;
+}
+.borderpattern {
+  width: 901px;
+  height: 20px;
+  background-repeat: repeat-y repeat-x;
+  background-image: url('../img/hr-img.png');
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ingredients {
+  list-style-type: none;
+  background-image: url('../img/list-bg.png');
+}
+li {
+  font-family: 'Patrick Hand', cursive;
+}
+
+#authorpic {
+  float: left;
+}
+button {
+  background-color: #bc7058;
+  float: right;
+}
+#recipetitle h1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  letter-spacing: -3px;
+}
+#printImage {
+  float: right;
+}
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-style: oblique;
+  font-size: xx-large;
 }
